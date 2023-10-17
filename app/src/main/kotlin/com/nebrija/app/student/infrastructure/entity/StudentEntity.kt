@@ -5,7 +5,7 @@ import org.hibernate.annotations.UuidGenerator
 
 @Entity
 @Table(name = "student")
-class studentEntity {
+class StudentEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     var id: Long = 0;

@@ -1,11 +1,13 @@
 package com.nebrija.app.student.domain.repository
 
+import com.nebrija.app.student.infrastructure.entity.StudentEntity
+
 interface IStudentRepository {
-    public fun createStudent();
+    fun createStudent(student: StudentEntity);
 
-    public fun getStudent();
+    fun getStudentByUUID(studentUUID: String): StudentEntity?;
 
-    public fun updateStudent();
+    fun updateStudent(student: StudentEntity);
 
-    public fun deleteStudent();
+    fun deleteStudent(student: StudentEntity);
 }
